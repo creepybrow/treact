@@ -112,3 +112,25 @@ li{
 .treact__desk{
     width:100%;
 }
+
+
+/*Features*/
+
+.features__title{
+    display: flex;
+    justify-content: center;
+    margin:32px 0;
+}
+.features__subheader{
+    display: flex;
+    justify-content: center;
+    margin-bottom:24px;
+}
+.text--purple{
+    color:purple;
+}
+.features__para{
+    font-size: 16px;
+    color:gray;
+    text-align: center;
+}
