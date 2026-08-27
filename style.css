@@ -3,6 +3,10 @@
     margin:0;
     box-sizing: border-box;
 }
+body{
+    width:100%;
+    max-width: 1200px;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -46,4 +50,50 @@ li{
    border: none;
    padding: 8px 20px;
    border-radius: 12px; 
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+}
+.text--purple{
+    color: purple;
+}
+.treact__para{
+    text-align: left;
+    display: flex;
+    color:rgb(109, 106, 106);
+    margin:16px 0;
+}
+.title__container{
+    max-width: 400px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin:0 auto;
+}
+.customers__title{
+    font-size: 24px;
+    color:gray;
+}
+.customer--logo{
+    width:200px;
+}
+.signup__container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left:28px; 
+}
+.btn{
+    max-width: 100px;
+    padding:8px 12px;
+    border-radius: 12px;
+    background-color: blueviolet;
+    color:white;
+    display: flex;
+    margin:0 auto;
 }
