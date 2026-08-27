@@ -11,8 +11,6 @@ html{
     scroll-behavior: smooth;
 }
 nav{
-    width:100%;
-    max-width: 1200px;
     display: flex;
     justify-content: space-between;
 }
@@ -54,12 +52,12 @@ li{
    border-radius: 12px; 
 }
 .row{
-   margin: 24px 0 24px 0;
-   margin: 0 auto;
-    display: flex;
-    flex-direction: column;
     width:100%;
     max-width: 1200px;
+    margin: 24px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .text--purple{
     color: purple;
@@ -82,11 +80,10 @@ li{
     color:gray;
 }
 .customer--logo{
-    width:200px;
+    width:100px;
 }
 .signup__container{
-    width:100%;
-    max-width: 800px;
+    width:40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,12 +105,13 @@ li{
     max-width: 1200px;
 }
 .treact__desk--container{
+    margin: 0 auto;
     width:60%;
-    max-width: 600px;
     height:150px;
+    display: flex;
 }
 .treact__desk{
-    width:100%;
+    width:60%;
 }
 .treact__title{
     width:100%;
