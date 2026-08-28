@@ -15,6 +15,7 @@ nav{
     justify-content: space-between;
 }
 .nav__logo--wrapper{
+    width: 100%;
     display: flex;
     align-items: center;
     padding:20px;
@@ -57,7 +58,6 @@ li{
     margin: 24px auto;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
 }
 .text--purple{
     color: purple;
@@ -69,7 +69,6 @@ li{
     margin:16px 0;
 }
 .title__container{
-    max-width: 800px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -104,12 +103,6 @@ li{
     width:100%;
     max-width: 1200px;
 }
-.treact__desk--container{
-    margin: 0 auto;
-    width:60%;
-    height:150px;
-    display: flex;
-}
 .treact__desk{
     width:60%;
 }
@@ -137,4 +130,7 @@ li{
     font-size: 16px;
     color:gray;
     text-align: center;
+}
+.signup__container{
+    width:100%;
 }
