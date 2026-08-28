@@ -207,3 +207,34 @@ color:purple;
     border-radius: 8px;
     margin-top: 24px;
 }
+.steps__title{
+    color:purple;
+    font-weight: bold;
+    margin-top: 20px 20px 0 0;
+}
+.step__num{
+    font-weight: bold;
+    color:gray;
+    font-size: 24px;
+}
+.step{
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.step__description{
+    margin-top: 8px;
+    font-weight: bold;
+    width:300px;
+    color:gray;
+    line-height: 1.5;
+}
+.step__wrapper{
+display: flex;
+flex-direction: column;
+}
+.steps__row{
+    width:80%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
