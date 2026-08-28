@@ -143,3 +143,27 @@ li{
 .signup__container{
     width:100%;
 }
+
+/*services*/
+
+.services__container{
+    width:calc(100$/3);
+    display: flex;
+    justify-content: center;
+}
+.service__shield{
+    width:28px;
+    margin:0 16px;
+}
+.service__title{
+    font-weight: bold;
+    font-size: 18px;
+}
+.service__description{
+    max-width: 200px;
+    line-height: 1.5;
+}
+.features__row{
+ max-width: 800px;
+ flex-wrap: wrap;   
+}
