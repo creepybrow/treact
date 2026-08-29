@@ -133,7 +133,7 @@ li{
     margin: 0 auto;
 }
 .text--purple{
-    color:purple;
+    color:#6415ff;
     font-weight: bold;
 }
 .features__para{
@@ -151,7 +151,7 @@ li{
 /*services*/
 
 .services__container{
-    width:calc(100$/3);
+    width:calc(100%/3);
     display: flex;
     justify-content: center;
 }
@@ -183,7 +183,7 @@ li{
 .qualitywork__title{
 margin:24px 0;
 font-size: 12px;
-color:purple;
+color:#6415ff;
 }
 .home__screenshot{
     max-width: 500px;
@@ -201,14 +201,14 @@ color:purple;
     margin-top: 24px;
 }
 .quality__button{
-    background-color: blueviolet;
+    background-color:#6415ff;
     color:white;
     padding:4px 14px;
     border-radius: 8px;
     margin-top: 24px;
 }
 .steps__title{
-    color:purple;
+    color:#6415ff;
     font-weight: bold;
     margin-top: 20px 20px 0 0;
 }
@@ -237,4 +237,42 @@ flex-direction: column;
     width:80%;
     margin-top: 25%;
     margin-bottom: 25%;
+}
+
+/*VALUES*/
+
+.values__row{
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.values__container{
+    width:100%;
+    max-width: 400px;
+}
+.values__title{
+    color:#6415ff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.values__title--subheader{
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.values__description{
+    line-height: 1.5;
+    font-size: 18px;
+    color:gray;
+}
+.values-btn{
+    background-color: #6415ff;
+    color:white;
+    padding:12px 20px;
+    border-radius: 8px;
+    margin-top: 16px;
+    border:none;
+}
+.values__promise{
+    max-width: 400px;
 }
