@@ -316,8 +316,8 @@ flex-direction: column;
 .pricing__row{
 display: flex;
 justify-content: center;
-margin-top:240px;
-margin-bottom:240px;
+margin:0 auto 64px;
+padding-top:96px;
 }
 
 .pricing__title,
@@ -338,11 +338,31 @@ margin-bottom:240px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border: 2px solid gray;;
+    border: 2px solid gray;
     margin:0 auto;
     width:100%;
     max-width: 400px;
-    height:800px;
+}
+.plan__container--enterprise{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid gray;
+    margin:0 auto;
+    width:100%;
+    max-width: 400px;
+}
+.plan__container--business{
+    background: linear-gradient(135deg, rgb(76,81,191)0%, rgb(102,126,234)100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid gray;
+    margin:0 auto;
+    width:100%;
+    max-width: 400px;
 }
 .plan__container--top{
     border:2px solid gray;
@@ -353,8 +373,17 @@ margin-bottom:240px;
 .plan__price{
     margin-bottom: 24px;
 }
+.plan__price--white{
+    margin-bottom: 24px;
+    color:white;
+}
 .plan__subscription{
     color:gray;
+}
+.plan__subscription--business{
+    color:white;
+    font-size: 24px;
+    font-weight: bold;
 }
 .plan__container--mid{
     border:2px solid gray;
@@ -362,7 +391,8 @@ margin-bottom:240px;
     line-height: 2.5;
     font-size: 20px;
 }
-.plain__audience{
+.plan__audience{
+    color:white;
     font-weight: bold;
     font-size: 24px;
 }
@@ -376,6 +406,20 @@ margin-bottom:240px;
     padding: 16px 32px;
     border-radius: 16px;
 }
+.buynow-btn--enterprise{
+    background:linear-gradient(115deg, rgb(245,101,101)0%, rgb(254,178,178)100%);
+    padding:16px 32px;
+    border-radius: 16px;
+}
+.buynow-btn--business{
+    color:purple;
+    font-weight: bold;
+    padding:16px 32px;
+    border-radius: 16px;
+}
 .plan__container--wrapper{
     display: flex;
+}
+.business__plan--para{
+    color:#E2e8f0;
 }
