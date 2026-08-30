@@ -423,3 +423,75 @@ padding-top:96px;
 .business__plan--para{
     color:#E2e8f0;
 }
+
+/*TESTIMONIALS*/
+.testimonial__row{
+    width:100%;
+    max-width: 1200px;
+}
+.testimonial__img{
+    width:100px;
+    border-radius: 50%;
+}
+.testimonial__love{
+    width:600px;
+    margin: 0 38px 0 0;
+}
+.rating__wrapper{
+    display: flex;
+    color:gold;
+    margin:24px 0;
+}
+.testimonial{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+.testimonial__title{
+    margin:24px 0;
+}
+.testimonial__description{
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.testimonial__paraphrase{
+    font-size: 32px;
+    font-weight: bold;
+}
+.testimonial__para{
+    color:gray;
+    line-height: 1.5;
+}
+.testimonial__title--container{
+    display: flex;
+    flex-direction: column;
+    margin:20px 20px 0 0;
+}
+.experience__wrapper{
+    display: flex;
+}
+.left-btn{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:none;
+    color:purple;
+}
+.right-btn{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:none;
+    color:purple;
+}
+.user__name{
+    font-weight: bold;
+    font-size: 24px;
+    margin:24px 62px 0 18px;
+}
+.user__position{
+    font-weight: bold;
+    color:gray;
+    margin:8px 62px 0 18px;
+}
