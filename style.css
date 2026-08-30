@@ -472,6 +472,7 @@ padding-top:96px;
     display: flex;
 }
 .left-btn{
+    margin-top: 24px;
     width:40px;
     height:40px;
     border-radius: 50%;
@@ -479,6 +480,7 @@ padding-top:96px;
     color:purple;
 }
 .right-btn{
+    margin-top: 24px;
     width:40px;
     height:40px;
     border-radius: 50%;
@@ -488,10 +490,10 @@ padding-top:96px;
 .user__name{
     font-weight: bold;
     font-size: 24px;
-    margin:24px 62px 0 18px;
+    margin:24px 150px 0 18px;
 }
 .user__position{
     font-weight: bold;
     color:gray;
-    margin:8px 62px 0 18px;
+    margin:8px 150px 0 18px;
 }
