@@ -333,3 +333,40 @@ margin-bottom:240px;
     width: 800px;
     text-align: center;
 }
+.plan__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid gray;;
+    margin: 0 28px 28px 0;
+    width:100%;
+    max-width: 400px;
+    height:800px;
+}
+.plan__container--top{
+    border:2px solid gray;
+    padding:40px;
+    font-size: 28px;
+}
+.plan__title,
+.plan__price{
+    margin-bottom: 24px;
+}
+.plan__subscription{
+    color:gray;
+}
+.plan__container--mid{
+    border:2px solid gray;
+    padding:80px;
+    line-height: 2.5;
+    font-size: 20px;
+}
+.plain__audience{
+    font-weight: bold;
+    font-size: 24px;
+}
+.button__container{
+    border: 2px solid gray;
+    padding: 90px;
+}
