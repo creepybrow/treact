@@ -339,7 +339,7 @@ margin-bottom:240px;
     justify-content: center;
     text-align: center;
     border: 2px solid gray;;
-    margin: 0 28px 28px 0;
+    margin:0 auto;
     width:100%;
     max-width: 400px;
     height:800px;
@@ -368,5 +368,14 @@ margin-bottom:240px;
 }
 .button__container{
     border: 2px solid gray;
-    padding: 90px;
+    padding: 90px 0;
+}
+.buynow-btn{
+    background: linear-gradient(115deg, rgb(56,178,172),
+    0%, rgb(129,230,217)100%);
+    padding: 16px 32px;
+    border-radius: 16px;
+}
+.plan__container--wrapper{
+    display: flex;
 }
