@@ -276,3 +276,37 @@ flex-direction: column;
 .values__promise{
     max-width: 400px;
 }
+.values__promises--wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.values__promise--container{
+    display: flex;
+}
+.values__row{
+    display: flex;
+    margin-bottom: 24px;
+}
+.value__demo--img{
+    max-width:600px;
+}
+.value__icon--wrapper-red{
+    background-color: #FEB2B2;
+    height:40px;
+    width:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin:24px 0;
+}
+.value__icon--wrapper-green{
+    background-color: #9AE6B4;
+    height:40px;
+    width:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin:24px 0;
+}
