@@ -7,12 +7,7 @@
 }
 /*BURGER MENU*/
 .menu__button{
-    position: absolute;
-    background:none;
-    border:none;
-    font-size: 28px;
-    right:0;
-    margin:0 20px;
+   display: none;
 }
 
 /*NAV BAR*/
@@ -657,9 +652,6 @@ hr{
         align-items: center;
         margin:0 auto;
     }
-    .nav__links--wrapper{
-        display:none;
-    }
    .logo__img{
     width: 150px;
    }
@@ -934,6 +926,18 @@ hr{
   }
 
   /*HAMBURGER*/
+  .menu__button{
+    display:block;
+    position: absolute;
+    right:0;
+    margin: 0 20px;
+    z-index: 100;
+    padding: 14px;
+    background-color: black;
+    color:white;
+    border:none;
+    font-size: 32px;
+  }
   .nav__links--wrapper{
     display:none;
   }
@@ -946,6 +950,7 @@ hr{
     top:0;
 
     gap:24px;
+    font-size: 32px;
     color:white;
 
     width:100%;
@@ -956,5 +961,8 @@ hr{
     align-items: center;
 
     z-index: 50;
+  }
+  body.menu-open{
+    overflow:hidden;
   }
 }

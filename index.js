@@ -6,6 +6,8 @@ menuButton.addEventListener("click", function(){
     navLinks.classList.toggle("menu__open");
 
     menuIcon.classList.toggle("fa-bars");
-    menuIcon.classList.toggle(fa-xmark);
+    menuIcon.classList.toggle("fa-xmark");
+
+    document.body.classList.toggle("menu-open");
 
 })
