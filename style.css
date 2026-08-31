@@ -724,4 +724,73 @@ hr{
     width:70%;
     align-items: center;
   }
+
+  /*FEATURES*/
+
+  .features__row{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .features__subheader{
+    font-size: 32px;
+  }
+  .features__para{
+    width:50%;
+    line-height: 1.5;
+  }
+  .services__container{
+    width: 50%;
+  }
+  .service__title{
+    color:black;
+    margin-bottom: 20px;
+  }
+  .service__description{
+    color:gray;
+  }
+
+  /*QUALITY*/
+
+  .qualitywork__title{
+    text-align: left;
+  }
+  .quality__work--row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-left:20px;
+  }
+  .quality__subtitle{
+    width:50%;
+    text-align: left;
+  }
+  .quality__para{
+    max-width: 100%;
+    max-width: 400px;
+  }
+  .home__screenshot{
+    width:50%;
+    max-width: none;
+  }
+  
+  /*STEPS*/
+
+  .steps__row{
+    display: flex;
+    flex-direction: row;
+  }
+  .steps__img{
+    width:80%;
+  }
+  .step__subtitle{
+    width:100%;
+    max-width:200px;
+  }
+  .step__num{
+    display: flex;
+    flex-direction: row;
+    margin:20px 0;
+  }
 }
