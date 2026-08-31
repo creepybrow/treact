@@ -5,6 +5,17 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+/*BURGER MENU*/
+.menu__button{
+    position: absolute;
+    background:none;
+    border:none;
+    font-size: 28px;
+    right:0;
+    margin:0 20px;
+}
+
+/*NAV BAR*/
 .nav__container{
     width:100%;
     max-width: 1200px;
@@ -560,7 +571,7 @@ padding-top:96px;
     max-width: 500px;
 }
 .get__started-btn{
-    height:100px;
+    height:50px;
     padding:20px 40px;
     display: flex;
     justify-content: center;
@@ -572,7 +583,7 @@ padding-top:96px;
     border:none;
 }
 .advertisement__button--contact{
-    height:100px;
+    height:50px;
     padding:20px 40px;
     display: flex;
     justify-content: center;
@@ -647,9 +658,6 @@ hr{
         margin:0 auto;
     }
     .nav__links--wrapper{
-        display:none;
-    }
-    .nav__link{
         display:none;
     }
    .logo__img{
@@ -752,26 +760,32 @@ hr{
   /*QUALITY*/
 
   .qualitywork__title{
-    text-align: left;
+    text-align: center;
   }
   .quality__work--row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
     margin-left:20px;
   }
   .quality__subtitle{
-    width:50%;
-    text-align: left;
+    width:100%;
+    text-align: center;
   }
   .quality__para{
     max-width: 100%;
-    max-width: 400px;
+    display: flex;
+    text-align: center;
+    margin: 24px auto;
+  }
+  .quality__button{
+    padding:16px 32px;
+    border-radius: 20px;
   }
   .home__screenshot{
-    width:50%;
+    width:70%;
     max-width: none;
   }
   
@@ -779,18 +793,168 @@ hr{
 
   .steps__row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .steps__img{
-    width:80%;
+    width:90%;
+    margin: 24px 0;
+  }
+  .steps__title{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    margin:18px 0;
+  }
+  .step__num{
+    justify-content: center;
+  }
+  .step{
+    margin: 0 auto;
   }
   .step__subtitle{
     width:100%;
-    max-width:200px;
   }
   .step__num{
     display: flex;
     flex-direction: row;
     margin:20px 0;
+  }
+  .step__description{
+    text-align: center;
+  }
+
+  /*VALUES*/
+
+  .values__row{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    max-width: 500px;
+  }
+  .value__icon--wrapper-green{
+    margin: 0 auto;
+  }
+  .value__icon--wrapper-red{
+    margin:0 auto;
+  }
+  .values-btn{
+    margin: 32px 0;
+  }
+  .value__demo--img{
+    width:80%;
+  }
+  .values__promise--container{
+    display: flex;
+    flex-direction: column;
+  }
+  .values__promise{
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    color:gray;
+  }
+
+  /*PRICING*/
+  .pricing__description{
+    width:400px;
+    margin:24px 0 auto;
+    line-height: 1.5;
+    color:gray;
+    text-align: center;
+  }
+  .plan__container--wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*TESTIMONIALS*/
+  .testimonial__row{
+    display: flex;
+    flex-direction: row;
+  }
+  .testimonial__love{
+    width:80%;
+  }
+  .testimonial__container{
+    width:800px;
+  }
+  .experience__wrapper{
+    width:100%;
+  }
+  .user__position{
+    width:100%;
+  }
+  .button__wrapper{
+    width:100%;
+    display: flex;
+    align-items: center;
+  }
+  .left-btn{
+    margin-right: 20px;
+  }
+
+  /*ADVERTISEMENT*/
+  .advertisement__row{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .advertisement__title{
+    text-align: center;
+  }
+  .advertisement__button--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    width:100%;
+  }
+  .get__started-btn,
+  .advertisement__button--contact{
+    margin: 24px 0 0;
+  }
+
+  /*FOOTER*/
+
+  .footer__row{
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__links--container{
+    margin: 0 24px;
+  }
+  .copyright__container--wrapper{
+    margin: 64px 0;
+  }
+  .copyright__inc,
+  .copyright__text{
+    color:#cbd5E0;
+  }
+
+  /*HAMBURGER*/
+  .nav__links--wrapper{
+    display:none;
+  }
+  .nav__links--wrapper.menu__open{
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    left:0;
+    top:0;
+
+    gap:24px;
+    color:white;
+
+    width:100%;
+    height:100%;
+    background-color: black;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 50;
   }
 }
