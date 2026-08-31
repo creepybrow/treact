@@ -95,7 +95,6 @@ li{
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin:0 32px;
 }
 .customers__title{
     margin-top: 80px;
@@ -640,21 +639,52 @@ hr{
 }
 @media (max-width: 768px){
    
+    .nav__logo--wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+    }
+    .nav__links--wrapper{
+        display:none;
+    }
     .nav__link{
         display:none;
     }
-  nav{
-    justify-content: space-between;
-    width:100%;
-    margin: 0 auto;
-    display: flex;
+   .logo__img{
+    width: 150px;
+   }
+  .row{
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
-  .nav__logo--wrapper{
-    max-width: 768px;
-    display: flex;
-    justify-content: space-between;
+  .title__container{
+    width:100%;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+  .treact__title{
+    width:100%;
+    max-width: 300px;
+    font-size: 32px;
+    text-align: center;
+    margin: 0 auto;
   }
+   .treact__logo--title{
+    font-size: 32px;
+   }
+   .treact__para{
+    width:100%;
+    width:500px;
+    line-height: 1.5;
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+   }
   .quality__work--row{
     flex-direction: column;
     align-items: center;
@@ -663,5 +693,35 @@ hr{
   .home__screenshot{
     width:100%;
     max-width: 200px;
+  }
+  .email{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
+  .email button{
+    position:static;
+    width:100%;
+    margin-top: 16px;
+    padding: 16px 210px;
+  }
+  .btn{
+    width: 100%;
+    padding:16px 18px;
+  }
+  .signup__container{
+    width:100%;
+    max-width: 400px;
+  }
+  .customers__title{
+    font-size: 32px;
+  }
+  .customer--logo{
+    margin-top: 20px;
+    max-width: 600px;
+  }
+  .treact__desk{
+    width:70%;
+    align-items: center;
   }
 }
