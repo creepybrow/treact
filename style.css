@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:ital,wdth,wght@0,75,700;1,75,700&display=swap');
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 .nav__container{
     width:100%;
@@ -14,6 +16,26 @@ nav{
     width:100%;
     display: flex;
     justify-content: space-between;
+}
+.email{
+    position: relative;
+    max-width: 450px;
+}
+.email input{
+    width:100%;
+    padding:20px 150px 20px 24px;
+    border-radius: 50px;
+    border: 2px solid lightgray;
+}
+.email button{
+    position:absolute;
+    right: 8px;
+    top:8px;
+    bottom:8px;
+    border:none;
+    border-radius: 50px;
+    padding: 0 18px;
+    align-items: center;
 }
 .nav__logo--wrapper{
     display: flex;
@@ -69,34 +91,34 @@ li{
     margin:16px 0;
 }
 .title__container{
+    width:100%;
     display: flex;
     flex-direction: column;
     text-align: left;
     margin:0 32px;
 }
 .customers__title{
+    margin-top: 80px;
     font-size: 18px;
     color:gray;
 }
 .customer--logo{
-    width:100px;
+    width:100%;
+    max-width: 533px;
 }
 .signup__container{
-    width:40%;
+    width:100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    margin-left:28px; 
+    justify-content: center; 
 }
 .btn{
     max-width: 100px;
-    padding:8px 12px;
+    padding:16px 0;
     border-radius: 12px;
-    background-color: blueviolet;
+    background-color: #6415ff;
     color:white;
     display: flex;
-    margin:0 auto;
 }
 .container{
     display: flex;
@@ -116,6 +138,9 @@ li{
 
 /*Features*/
 
+#features{
+    margin-top: 240px;
+}
 .features__title{
     display: flex;
     justify-content: center;
@@ -144,10 +169,6 @@ li{
     color:gray;
     text-align: center;
 }
-.signup__container{
-    width:100%;
-}
-
 /*services*/
 
 .services__container{
@@ -173,7 +194,9 @@ li{
 }
 
 /*Quality Work*/
-
+#quality{
+    margin-top: 240px;
+}
 .quality__work--row{
     width:100%;
     justify-content: center;
@@ -207,10 +230,16 @@ color:#6415ff;
     border-radius: 8px;
     margin-top: 24px;
 }
+
+/*STEPS*/
+#steps{
+    margin: 240px 0;
+}
+
 .steps__title{
     color:#6415ff;
     font-weight: bold;
-    margin-top: 20px 20px 0 0;
+    margin: 20px 20px 0 0;
 }
 .step__num{
     font-weight: bold;
@@ -234,9 +263,8 @@ display: flex;
 flex-direction: column;
 }
 .steps__row{
-    width:80%;
-    margin-top: 25%;
-    margin-bottom: 25%;
+    width:100%;
+    margin: 0 auto;
 }
 
 /*VALUES*/
@@ -334,6 +362,7 @@ padding-top:96px;
     text-align: center;
 }
 .plan__container{
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -343,30 +372,32 @@ padding-top:96px;
     width:100%;
     max-width: 400px;
 }
+.plan__container--personal{
+    border-top: 8px solid rgb(129,230,217);
+}
 .plan__container--enterprise{
-     display: flex;
+    border-top: 8px solid rgb(245,101,101);
+    border-radius: 8px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border: 2px solid gray;
-    margin:0 auto;
     width:100%;
     max-width: 400px;
 }
 .plan__container--business{
+    border-radius: 8px;
     background: linear-gradient(135deg, rgb(76,81,191)0%, rgb(102,126,234)100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     border: 2px solid gray;
-    margin:0 auto;
     width:100%;
     max-width: 400px;
 }
-.plan__container--top{
-    border:2px solid gray;
-    padding:40px;
+.personal__plan--container-top{
+    padding:20px;
     font-size: 28px;
 }
 .plan__title,
@@ -386,8 +417,8 @@ padding-top:96px;
     font-weight: bold;
 }
 .plan__container--mid{
-    border:2px solid gray;
-    padding:80px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
     line-height: 2.5;
     font-size: 20px;
 }
@@ -397,8 +428,8 @@ padding-top:96px;
     font-size: 24px;
 }
 .button__container{
-    border: 2px solid gray;
-    padding: 90px 0;
+    padding:20px 0;
+    border:none;
 }
 .buynow-btn{
     background: linear-gradient(115deg, rgb(56,178,172),
@@ -419,13 +450,20 @@ padding-top:96px;
 }
 .plan__container--wrapper{
     display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 32px;
 }
 .business__plan--para{
     color:#E2e8f0;
 }
 
+
 /*TESTIMONIALS*/
 .testimonial__row{
+    margin-top:240px;
+    margin-bottom:240px;
     width:100%;
     max-width: 1200px;
 }
@@ -497,9 +535,12 @@ padding-top:96px;
     color:gray;
     margin:8px 150px 0 18px;
 }
+
+/*ADS CONTAINER*/
 .advertisement__container{
     display: flex;
     width:100%;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
@@ -510,7 +551,7 @@ padding-top:96px;
 }
 .advertisement__row{
     width:100%;
-    margin:250px 0 250px 100px;
+    margin:0 auto;
     background-color: #6415ff;
     height:400px;
 }
@@ -596,4 +637,31 @@ hr{
     color:white;
     font-weight: bold;
     margin-top: 10px;
+}
+@media (max-width: 768px){
+   
+    .nav__link{
+        display:none;
+    }
+  nav{
+    justify-content: space-between;
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .nav__logo--wrapper{
+    max-width: 768px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .quality__work--row{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .home__screenshot{
+    width:100%;
+    max-width: 200px;
+  }
 }

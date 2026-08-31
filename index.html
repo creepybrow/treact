@@ -28,7 +28,7 @@
             <li><a href="" class="nav__link">About</a></li>
             <li><a href="" class="nav__link">Blog</a></li>
             <li><a href="" class="nav__link">Pricing</a></li>
-            <li><a href="" class="nav__link--contact">Contact Us</a></li>
+            <li><a href="" class="nav__link">Contact Us</a></li>
             <li><a href="" class="nav__link--login">Login</a></li>
             <a href=""><button class="nav--btn">Sign Up</button></a>
           </ul>
@@ -47,7 +47,10 @@
             modular components with a variety of pages and components.
           </p>
           <div class="signup__container">
-            <button class="btn">Get Started</button>
+            <div class="email">
+              <input type="email" placeholder="Your E-mail Address" />
+              <button class="btn">Get Started</button>
+            </div>
             <h1 class="customers__title">Our Trusted Customers</h1>
             <img
               class="customer--logo"
@@ -185,7 +188,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="quality">
       <div class="row quality__work--row">
         <div class="quality__work--wrapper">
           <div class="qualitywork__title">
@@ -212,7 +215,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="steps">
       <div class="row steps__row">
         <div class="steps__container">
           <img
@@ -314,18 +317,18 @@
         </div>
       </div>
       <div class="plan__container--wrapper">
-        <div class="plan__container">
-          <div class="plan__container--top">
+        <div class="plan__container plan__container--personal">
+          <div class="personal__plan--container-top">
             <p class="plan__title">Personal</p>
             <p class="plan__price">$17.99</p>
             <p class="plan__subscription">Monthly</p>
           </div>
           <div class="plan__container--mid">
             <p class="plain__audience">For Individuals</p>
-            <p>30 Templates</p>
+            <p class="plan__title">30 Templates</p>
             <p>7 Landing Pages</p>
             <p>12 Internal Pages</p>
-            <p>Basic Assistance</p>
+            <p class="plan__subscription--business">Basic Assistance</p>
           </div>
           <div class="plan__container--bottom">
             <div class="button__container">
@@ -333,7 +336,7 @@
             </div>
           </div>
         </div>
-        <div class="plan__container--business">
+        <div class="plan__container plan__container--business">
           <div class="plan__container--top">
             <p class="plan__title">BUSINESS</p>
             <p class="plan__price--white">$37.99</p>
@@ -352,7 +355,7 @@
             </div>
           </div>
         </div>
-        <div class="plan__container--enterprise">
+        <div class="plan__container plan__container--enterprise">
           <div class="plan__container--top">
             <p class="plan__title">ENTERPRISE</p>
             <p class="plan__price">$57.99</p>
@@ -423,8 +426,12 @@
                 <p class="user__position">Director, Delos Inc.</p>
               </div>
               <div class="button__wrapper">
-                <button class="left-btn"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="right-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                <button class="left-btn">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="right-btn">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -435,7 +442,9 @@
     <section>
       <div class="row advertisement__row">
         <div class="advertisement__container">
-         <h1 class="advertisement__title">Developers all over the world are happily using Treact.</h1>
+          <h1 class="advertisement__title">
+            Developers all over the world are happily using Treact.
+          </h1>
         </div>
         <div class="advertisement__button--container">
           <button class="get__started-btn">Get Started</button>
@@ -491,12 +500,18 @@
           </ul>
         </div>
       </div>
-      <hr>
+      <hr />
       <div class="copyright__container--wrapper">
         <div class="copyright__container">
-          <img class="footer__logo" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="">
+          <img
+            class="footer__logo"
+            src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+            alt=""
+          />
           <p class="copyright__inc">Treact Inc.</p>
-          <p class="copyright__text">&copy; 2018 Treact Inc. All Rights Reserved.</p>
+          <p class="copyright__text">
+            &copy; 2018 Treact Inc. All Rights Reserved.
+          </p>
           <i></i>
           <i></i>
           <i></i>
