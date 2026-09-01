@@ -680,8 +680,11 @@ padding-top:96px;
 }
 .advertisement__button--container{
     display: flex;
-    width:100%;
-    max-width: 500px;
+    width:50%;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+    transform: translateX(-150px);
 }
 .get__started-btn{
     height:50px;
@@ -689,8 +692,8 @@ padding-top:96px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px 32px 0 0;
-    border-radius: 8px; 
+    border-radius: 18px; 
+    border:1px solid gray;
     background-color: rgb(245,101,101);
     color:white;
     border:none;
@@ -701,9 +704,8 @@ padding-top:96px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px 32px 0 0;
-    border-radius: 8px;
-    border:2px solid white;
+    border-radius: 18px;
+    border:1px sold #CBD5E0;
 }
 
 /*FOOTER*/
@@ -1021,10 +1023,6 @@ hr{
     align-items: center;
     gap:16px;
     width:100%;
-  }
-  .get__started-btn,
-  .advertisement__button--contact{
-    margin: 24px 0 0;
   }
 
   /*FOOTER*/
