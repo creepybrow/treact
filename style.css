@@ -736,8 +736,10 @@ padding-top:96px;
     display: flex;
 }
 footer{
+    position: relative;
     background-color: #6415ff;
-    height:400px;
+    overflow: hidden;
+    min-height: 400px;
 }
 .footer__section--title{
     color:white;
@@ -778,6 +780,22 @@ hr{
     color:white;
     font-weight: bold;
     margin-top: 10px;
+}
+.footer__blob{
+    position: absolute;
+    top:-100px;
+    left:-100px;
+    width:300px;
+    height:300px;
+    color:#4f11cca9;
+}
+.footer__blob2{
+    position: absolute;
+    bottom:-200px;
+    right:-100px;
+    width:350px;
+    height:350px;
+    color:#4f11cca9;
 }
 @media (max-width: 768px){
    
