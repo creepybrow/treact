@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:ital,wdth,wght@0,75,700;1,75,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@300;400;700&family=Roboto:ital,wdth,wght@0,75,700;1,75,700&display=swap');
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 /*BURGER MENU*/
 .menu__button{
@@ -15,12 +15,16 @@
     width:100%;
     max-width: 1200px;
 }
+.nav__row{
+    margin: 12px auto;
+}
 html{
     scroll-behavior: smooth;
 }
 nav{
     width:100%;
     display: flex;
+    margin-top: -12px;
     justify-content: space-between;
 }
 .email{
@@ -46,21 +50,23 @@ nav{
 .nav__logo--wrapper{
     display: flex;
     align-items: center;
-    padding:20px;
+    padding:2px 20px 20px 2px;
 }
 .nav__links--wrapper{
     display: flex;
     align-items: center;
     padding:32px;
 }
-.nav__link{
-    padding-left:24px;
-    text-decoration: none;
-    color:#242424;
+.nav__link,
+.nav__link--login{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 0 0 96px;
+    color:#243e63;
 }
 .nav__link--login{
-    padding-right:8px;
-    text-decoration: none;
+    padding-right: 4px;
+    margin:0 24px 0 48px;
 }
 .nav__link--contact{
     padding:12px 24px;
@@ -71,18 +77,20 @@ li{
     text-decoration: none;
 }
 .logo__img{
-    width:80px;
+    width:36px;
+    margin: 0 12px 0 0;
 }
 .nav--btn{
-   color:white;
+   color:#F7FAFC;
    background-color: blueviolet;
    border: none;
-   padding: 8px 20px;
+   font-size: 14px;
+   padding: 12px 32px;
    border-radius: 12px; 
 }
 .row{
     width:100%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 24px auto;
     display: flex;
     justify-content: space-between;
@@ -94,10 +102,11 @@ li{
     text-align: left;
     display: flex;
     color:rgb(109, 106, 106);
-    margin:16px 0;
+    margin:32px 0;
+    font-size: 18px;
+    line-height: 1.5;
 }
 .title__container{
-    width:100%;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -110,6 +119,8 @@ li{
 .customer--logo{
     width:100%;
     max-width: 533px;
+    padding: 0 128px 0 0;
+    margin:16px 0 0;
 }
 .signup__container{
     width:100%;
@@ -119,11 +130,15 @@ li{
 }
 .btn{
     max-width: 100px;
-    padding:16px 0;
-    border-radius: 12px;
+    padding:12px 32px;
+    border-radius: 96px;
+
     background-color: #6415ff;
     color:white;
     display: flex;
+}
+.input{
+    padding: 20px 192px 20px 32px;
 }
 .container{
     display: flex;
@@ -131,7 +146,8 @@ li{
     max-width: 1200px;
 }
 .treact__desk{
-    width:60%;
+    width:100%;
+    max-width: 800px;
 }
 .treact__title{
     width:100%;
@@ -623,7 +639,7 @@ footer{
     font-weight: bold;
 }
 a{
-    color:white;
+    color:#242424;
     text-decoration: none;
 }
 hr{
@@ -670,9 +686,10 @@ hr{
   .treact__title{
     width:100%;
     max-width: 300px;
-    font-size: 32px;
+    font-size: 48px;
     text-align: center;
     margin: 0 auto;
+    color:#1A202C;
   }
    .treact__logo--title{
     font-size: 32px;
