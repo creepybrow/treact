@@ -409,11 +409,12 @@ padding-top:96px;
     justify-content: center;
 }
 .pricing__subtitle{
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
 }
 .pricing__description{
     width: 800px;
+    color:gray;
     text-align: center;
 }
 .plan__container{
@@ -449,8 +450,18 @@ padding-top:96px;
     width:100%;
     max-width: 400px;
 }
+.plan__container--business-mid{
+    border-top: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    line-height: 2.5;
+    font-size: 16px;
+    height:300px;
+}
+.plan__container--business .plan__para{
+    color:#e2e8f0;
+}
 .business__plan--container-top{
-    padding:40px 0 32px;
+    padding:42px 0 40px;
 }
 .personal__plan--container-top,
 .enterprise__plan--container-top,
@@ -517,19 +528,21 @@ padding-top:96px;
     border-radius: 16px;
 }
 .buynow-btn--enterprise{
-    background:linear-gradient(115deg, rgb(245,101,101)0%, rgb(254,178,178)100%);
-    padding:16px 32px;
+    background:linear-gradient(115deg, rgb(245,101,101) 0%, rgb(254,178,178) 100%);
+    padding:16px 48px;
     border-radius: 16px;
+    font-weight: 700;
 }
 .buynow-btn--personal{
-    padding:16px 32px;
+    background:linear-gradient(115deg, rgb(56,178,172) 0%, rgb(129,230,217) 100%);
+    padding:16px 48px;
     border-radius:16px;
-    font-weight: bold;
+    font-weight: 700;
 }
 .buynow-btn--business{
     color:purple;
     font-weight: bold;
-    padding:16px 32px;
+    padding:16px 48px;
     border-radius: 16px;
 }
 .plan__container--wrapper{
