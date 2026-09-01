@@ -571,8 +571,11 @@ padding-top:96px;
     border-radius: 50%;
 }
 .testimonial__love{
-    width:600px;
-    margin: 0 38px 0 0;
+    width:90%;
+    margin:48px 0;
+}
+.testimonial__container{
+    width:80%;
 }
 .rating__wrapper{
     display: flex;
@@ -593,8 +596,9 @@ padding-top:96px;
     line-height: 1.5;
 }
 .testimonial__paraphrase{
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 48px;
+    padding:24px 0;
+    font-weight: 700;
 }
 .testimonial__para{
     color:gray;
