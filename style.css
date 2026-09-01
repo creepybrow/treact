@@ -646,17 +646,37 @@ padding-top:96px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .advertisement__title{
     color:white;
     font-weight: bold;
+    width:500px;
+}
+.advertisement__blob{
+    position: absolute;
     width:400px;
+    color:#5011cc;
+    z-index: 0;
+    left:-100px;
+    bottom:-200px;
+}
+.advertisement__blob--right{
+    position:absolute;
+    width:500px;
+    right: -200px;
+    top: -400px;
+    color:#5011cc;
+    z-index: 0;
 }
 .advertisement__row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
     width:100%;
-    margin:0 auto;
+    margin:250px auto;
     background-color: #6415ff;
-    height:400px;
+    height:300px;
 }
 .advertisement__button--container{
     display: flex;
