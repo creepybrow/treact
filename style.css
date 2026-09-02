@@ -57,18 +57,19 @@ nav{
 .nav__links--wrapper{
     display: flex;
     align-items: center;
-    padding:32px;
+    gap:32px;
 }
 .nav__link,
-.nav__link--login{
+.nav__link--login,
+.nav--btn{
     font-size: 14px;
     font-weight: 600;
-    padding: 0 0 0 96px;
     color:#243e63;
+    white-space: nowrap;
 }
 .nav__link--login{
     padding-right: 4px;
-    margin:0 24px 0 48px;
+    margin:0;
 }
 .nav__link--contact{
     padding:12px 24px;
@@ -307,7 +308,11 @@ display: flex;
 flex-direction: row;
 }
 .steps__row{
-    width:50%;
+    width:100%;
+}
+.steps__img{
+    width:100%;
+    height:auto;
 }
 
 /*VALUES*/
@@ -414,6 +419,7 @@ padding-top:96px;
     display: block;
     font-size: 48px;
     font-weight: bold;
+    text-align: center;
 }
 .pricing__description{
     width: 800px;
@@ -568,6 +574,7 @@ padding-top:96px;
     margin-bottom:240px;
     width:100%;
     max-width: 1200px;
+    align-items: center;
 }
 .testimonial__img{
     width:100px;
@@ -1279,4 +1286,61 @@ hr{
   .menu__button{
     cursor:pointer;
   }
+  .nav--btn,
+  .nav__link,
+  .nav__link--login{
+    display: none;
+  }
+}
+@media (max-width:1280){
+    .treact__desk{
+        width:40%;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1025px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .treact__title{
+        text-align: center;
+        font-size: 38px;
+        margin-top:32px;
+        margin-bottom: 32px;
+    }
+    .treact__para{
+        width:100%;
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+    .signup__container{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .customers__title{
+        text-align: center;
+    }
+    .customer--logo{
+        padding:0;
+    }
+    .treact__desk{
+        width:60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1150px){
+    .nav__links--wrapper{
+        display: flex;
+        align-items: center;
+        gap:clamp(20px,2.5vw, 32px);
+    }
+
 }
