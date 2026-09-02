@@ -46,6 +46,9 @@ nav{
     padding: 0 18px;
     align-items: center;
 }
+.email{
+    position: relative;
+}
 .nav__logo--wrapper{
     display: flex;
     align-items: center;
