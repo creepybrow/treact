@@ -818,6 +818,112 @@ hr{
     height:350px;
     color:#4f11cca9;
 }
+@media (max-width:1280px){
+    .treact__desk{
+        width:40%;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 1150px){
+    .nav__links--wrapper{
+        display: flex;
+        align-items: center;
+        gap:clamp(20px,2.5vw, 32px);
+    }
+
+}
+@media (max-width: 1025px){
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+    .treact__title{
+        text-align: center;
+        font-size: 38px;
+        margin-top:32px;
+        margin-bottom: 32px;
+    }
+    .treact__para{
+        width:100%;
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+    .signup__container{
+        width:100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .customers__title{
+        text-align: center;
+    }
+    .customer--logo{
+        padding:0;
+    }
+    .treact__desk{
+        width:60%;
+        margin: 0 auto;
+    }
+    /*QUALITY*/
+    .quality__work--row{
+        flex-direction: row;
+    }
+    /*STEPS*/
+    .steps__row{
+        flex-direction: row;
+    }
+    .getstarted__container{
+        transform: translateY(-100px);
+    }
+    /*VALUES*/
+    .values__description{
+        width:100%;
+        max-width: 400px;
+    }
+    .values__promises--wrapper{
+        margin: 0 24px;
+    }
+    .values__title{
+        font-size: 12px;
+    }
+    .user__position{
+        width:100%;
+    }
+    .rating__wrapper{
+        gap:8px;
+    }
+    /*TESTIMONIALS*/
+    .button__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    .right-btn,
+    .left-btn{
+        margin-right: 20px;
+        margin-top: 24px;
+    }
+    /*ADVERTISEMENT*/
+    .advertisement__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:64px;
+        padding:0 48px;
+    }
+    .advertisement__title{
+        width:auto;
+        max-width: 500px;
+    }
+    .advertisement__button--container{
+        width:auto;
+        transform:none;
+        margin:0;
+    }
+}
 @media (max-width: 768px){
    
     .nav__logo--wrapper{
@@ -885,7 +991,7 @@ hr{
     flex-direction: column;
     justify-content: center;
     width:100%;
-    max-width: 768x;
+    max-width: 768px;
     align-items: center;
     margin: 0 auto;
   }
@@ -1355,62 +1461,6 @@ hr{
   .nav__links--wrapper.menu__open .nav--btn{
     display: block;
   }
-}
-@media (max-width:1280px){
-    .treact__desk{
-        width:40%;
-    }
-    .row{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 1025px){
-    .row{
-        display: flex;
-        flex-direction: column;
-    }
-    .treact__title{
-        text-align: center;
-        font-size: 38px;
-        margin-top:32px;
-        margin-bottom: 32px;
-    }
-    .treact__para{
-        width:100%;
-        max-width: 700px;
-        text-align: center;
-        margin: 0 auto;
-        margin-bottom: 32px;
-    }
-    .signup__container{
-        width:100%;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    .customers__title{
-        text-align: center;
-    }
-    .customer--logo{
-        padding:0;
-    }
-    .treact__desk{
-        width:90%;
-        margin: 0 auto;
-    }
-    .quality__work--row{
-        flex-direction: column-reverse;
-    }
-}
-
-@media (max-width: 1150px){
-    .nav__links--wrapper{
-        display: flex;
-        align-items: center;
-        gap:clamp(20px,2.5vw, 32px);
-    }
-
 }
 @media (max-width: 500px){
     .email{
