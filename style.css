@@ -192,6 +192,7 @@ li{
     font-weight: bold;
 }
 .features__para{
+    width:100%;
     max-width: 700px;
     margin: 0 auto;
     justify-content: center;
@@ -224,6 +225,7 @@ li{
     color:#243E63;
 }
 .service__description{
+    width:100%;
     max-width: 200px;
     line-height: 1.5;
     color: #7C8BA1;
@@ -261,7 +263,8 @@ color:#6415ff;
     max-width: 800px;
 }
 .quality__para{
-    width:400px;
+    width:100%;
+    max-width:400px;
     font-size: 18px;
     color:gray;
     margin-top: 24px;
@@ -302,6 +305,7 @@ color:#6415ff;
 }
 .step__description{
     margin: 10px 0;
+    width:100%;
     max-width: 400px;
     font-weight: bold;
     color:gray;
@@ -359,6 +363,7 @@ flex-direction: row;
 }
 .values__promise{
     color:#718096;
+    width:100%;
     max-width: 400px;
 }
 .values__promises--wrapper{
@@ -426,7 +431,8 @@ padding-top:96px;
     text-align: center;
 }
 .pricing__description{
-    width: 800px;
+    width:100%;
+    max-width: 800px;
     color:gray;
     text-align: center;
 }
@@ -665,7 +671,8 @@ padding-top:96px;
 .advertisement__title{
     color:white;
     font-weight: bold;
-    width:500px;
+    width:100%;
+    max-width:500px;
 }
 .advertisement__blob{
     position: absolute;
@@ -857,7 +864,7 @@ hr{
    }
    .treact__para{
     width:100%;
-    width:600px;
+    max-width:600px;
     line-height: 1.5;
     font-size: 18px;
     display: flex;
@@ -978,7 +985,7 @@ hr{
     margin: 0;
   }
   .quality__para{
-    max-width: 30%;
+    width: 100%;
     line-height: 1.5;
     max-width: 400px;
     display: flex;
@@ -1062,11 +1069,13 @@ hr{
   }
   .values__description{
     text-align: center;
-    width:600px;
+    width:100%;
+    max-width: 600px;
     margin: 20px auto;
   }
   .values__title--subheader{
-    width:500px;
+    width:100%;
+    max-width: 500px;
     text-align: center;
     margin: 20px auto;
   }
@@ -1114,11 +1123,13 @@ hr{
     font-size: 24px;
   }
   .pricing__subtitle{
+    width:100%;
     max-width: 500px;
     text-align: center;
   }
   .pricing__description{
-    width:500px;
+    width:100%;
+    max-width: 500px;
     margin:24px 0 auto;
     line-height: 1.5;
     color:gray;
@@ -1136,10 +1147,11 @@ hr{
   }
   .testimonial__love{
     width:100%;
-    width: 500px;
+    max-width: 500px;
   }
   .testimonial__container{
-    width:500px;
+    width:100%;
+    max-width:500px;
     text-align: center;
     line-height: 1.5;
   }
@@ -1190,9 +1202,9 @@ hr{
     
   }
   .advertisement__title{
-    text-align: center;
-    max-width: 500px;
     width:100%;
+    max-width: 500px;
+    text-align: center;
 
   }
   .advertisement__button--container{
@@ -1344,7 +1356,7 @@ hr{
     display: block;
   }
 }
-@media (max-width:1280){
+@media (max-width:1280px){
     .treact__desk{
         width:40%;
     }
