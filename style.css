@@ -1338,6 +1338,11 @@ hr{
   .nav__link--login{
     display: none;
   }
+  .nav__links--wrapper.menu__open .nav__link,
+  .nav__links--wrapper.menu__open .nav__link--login,
+  .nav__links--wrapper.menu__open .nav--btn{
+    display: block;
+  }
 }
 @media (max-width:1280){
     .treact__desk{
@@ -1467,8 +1472,19 @@ hr{
         text-align: center;
     }
     .button__wrapper{
+        width:auto;
         justify-content: center;
         margin: 0 auto;
+    }
+    /*ADVERTISEMENT*/
+    .advertisement__title{
+        font-size: 32px;
+    }
+    .advertisement__button--container{
+        flex-direction: column;
+    }
+    .menu__button{
+        display: flex;
     }
 }
 @media (max-width: 768px){
