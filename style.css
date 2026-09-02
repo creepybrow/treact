@@ -1395,6 +1395,82 @@ hr{
     }
 
 }
+@media (max-width: 500px){
+    .email{
+        flex-direction: column;
+        gap:12px;
+        width:90%;
+        margin:0 auto;
+    }
+    .email button{
+        position: static;
+        width:100%;
+        padding: 16px 18px;
+    }
+    .customer--logo{
+        width:100%;
+        max-width: 400px;
+    }
+    .treact__desk{
+        width:90%;
+    }
+
+    /*FEATURES*/
+    .features__row{
+        flex-direction: column;
+    }
+    .features__subheader{
+        display: block;
+        text-align: center;
+    }
+    .services__container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin:32px 0;
+    }
+    /*QUALITY*/
+    .home__screenshot{
+        width:90%;
+        margin-bottom: 28px;
+    }
+    .quality__subtitle{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    /*VALUES*/
+    .value__demo--img{
+        width:90%;
+        margin-bottom: 28px;
+    }
+    .values__title--subheader{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .values__description{
+        text-align: center;
+        width:100%;
+        max-width: 450px;
+    }
+    .values__promise{
+        width:85%;
+        max-width: 330px;
+    }
+    /*TESTIMONIALS*/
+    .experience__wrapper{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .wrapper{
+        text-align: center;
+    }
+    .button__wrapper{
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
 @media (max-width: 768px){
     .footer__row{
         flex-direction: row;
