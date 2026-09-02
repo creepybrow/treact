@@ -47,6 +47,8 @@ nav{
     align-items: center;
 }
 .email{
+    width:100%;
+    max-width: none;
     position: relative;
 }
 .nav__logo--wrapper{
@@ -113,6 +115,8 @@ li{
     display: flex;
     flex-direction: column;
     text-align: left;
+    width:100%;
+    max-width: 700px;
 }
 .customers__title{
     margin-top: 80px;
@@ -874,8 +878,9 @@ hr{
     flex-direction: column;
     justify-content: center;
     width:100%;
-    max-width: 500px;
+    max-width: 768x;
     align-items: center;
+    margin: 0 auto;
   }
   .email button{
     position: absolute;
@@ -897,6 +902,7 @@ hr{
   }
   .signup__container{
     width:100%;
+    max-width: 600px;
     margin: 0 auto;
   }
   .customers__title{
@@ -955,12 +961,12 @@ hr{
 
   .qualitywork__title{
     font-size: 12px;
-    text-align: left;
+    text-align: center;
     letter-spacing:2px;
   }
   .quality__work--row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -968,22 +974,22 @@ hr{
   .quality__subtitle{
     width:100%;
     max-width: 500px;
-    text-align: left;
+    text-align: center;
     margin: 0;
   }
   .quality__para{
     max-width: 30%;
     line-height: 1.5;
-    max-width: 300px;
+    max-width: 400px;
     display: flex;
-    text-align: left;
-    margin: 24px 0;
+    text-align: center;
+    margin: 24px auto;
   }
   .quality__button{
     display:block;
     padding:16px 38px;
     border-radius: 20px;
-    margin: 24px 0 0;
+    margin: 24px auto;
   }
   .home__screenshot{
     width:50%;
@@ -1002,27 +1008,32 @@ hr{
     flex-direction: column;
   }
   .step__wrapper{
+    flex-direction: column;
     width:100%;
-    max-width: 600px;
+    max-width: 800px;
     margin-top: 32px;
   }
   .steps__img{
-    width:90%;
+    width:100%;
+    max-width: 500px;
     margin: 24px 0;
   }
   .steps__title{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
     font-size: 16px;
     letter-spacing: 2px;
-    margin:18px 0;
+    margin:18px auto;
   }
   .step__num{
     display: flex;
-    margin: 0 24px 20px 0;
+    text-align: center;
+    margin: 0 auto;
   }
   .step{
-    margin: 0 auto;
+    margin: 20px auto;
+    text-align: center;
     font-size: 20px;
   }
   .step__subtitle{
@@ -1030,29 +1041,34 @@ hr{
     font-size: 40px;
   }
   .step__description{
-    text-align: left;
+    text-align: center;
   }
 
   /*VALUES*/
 
   .values__row{
-    flex-direction: row;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
     width:100%;
     max-width: none;
     margin-left: 0;
     margin-right:auto;
   }
   .values__title{
-    text-align: left;
+    text-align: center;
     font-size: 20px;
     letter-spacing: 2px;
   }
   .values__description{
-    text-align: left;
+    text-align: center;
+    width:600px;
+    margin: 20px auto;
   }
   .values__title--subheader{
-    width:300px;
-    text-align: left;
+    width:500px;
+    text-align: center;
+    margin: 20px auto;
   }
   .value__icon--wrapper-green{
     margin: 16px 0;
@@ -1068,6 +1084,7 @@ hr{
   }
   .value__title--row{
     display: flex;
+    justify-content: center;
     align-items: center;
     gap:12px;
   }
@@ -1076,7 +1093,7 @@ hr{
     flex-direction: column;
   }
   .values__promise{
-    text-align: left;
+    text-align: center;
     display: flex;
     margin: 0 auto;
     margin-top: 20px;
@@ -1084,6 +1101,11 @@ hr{
   }
   .pro,.affordable{
     font-size: 24px;
+    margin: 0;
+  }
+  .values-btn{
+    display: block;
+    margin: 28px auto;
   }
 
   /*PRICING*/
@@ -1114,12 +1136,27 @@ hr{
   }
   .testimonial__love{
     width:100%;
-    width: 300px;
+    width: 500px;
   }
   .testimonial__container{
-    width:700px;
+    width:500px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .rating__wrapper{
+    gap:12px;
+    margin: 28px auto;
+    font-size: 20px;
+  }
+  .wrapper{
+    width:100%;
+    max-width: 800px;
+    text-align: left;
   }
   .experience__wrapper{
+    width:100%;
+  }
+  .user__name{
     width:100%;
   }
   .user__position{
@@ -1130,8 +1167,10 @@ hr{
     display: flex;
     align-items: center;
   }
-  .left-btn{
+  .left-btn,.right-btn{
     margin-right: 20px;
+    width:50px;
+    height:50px;
   }
 
   /*ADVERTISEMENT*/
@@ -1183,7 +1222,7 @@ hr{
   .footer__row{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
   }
   .copyright__container{
     position: relative;
@@ -1191,8 +1230,9 @@ hr{
     background-color: transparent;
   }
   .footer__links--container{
-    margin: 0 24px;
-    position: relative;
+    width: calc(100%/3);
+    margin: 0;
+    padding-left:32px;
   }
   .copyright__container--wrapper{
     margin: 64px 0;
@@ -1208,9 +1248,16 @@ hr{
   .footer__links--container,
   .copyright__container{
     position: relative;
+    flex-direction: column;
+    align-items: center;
     z-index: 1;
   }
-
+  .copyright__brand{
+    margin:20px 0;
+  }
+.social__links{
+    margin:24px 0;
+}
   /*HAMBURGER*/
   .menu__button{
     display:block;
@@ -1321,7 +1368,8 @@ hr{
         margin-bottom: 32px;
     }
     .signup__container{
-        max-width: 50%;
+        width:100%;
+        max-width: 600px;
         margin: 0 auto;
     }
     .customers__title{
@@ -1331,8 +1379,11 @@ hr{
         padding:0;
     }
     .treact__desk{
-        width:60%;
+        width:90%;
         margin: 0 auto;
+    }
+    .quality__work--row{
+        flex-direction: column-reverse;
     }
 }
 
@@ -1343,4 +1394,9 @@ hr{
         gap:clamp(20px,2.5vw, 32px);
     }
 
+}
+@media (max-width: 768px){
+    .footer__row{
+        flex-direction: row;
+    }
 }
