@@ -408,6 +408,7 @@ padding-top:96px;
     justify-content: center;
 }
 .pricing__subtitle{
+    display: block;
     font-size: 48px;
     font-weight: bold;
 }
@@ -982,8 +983,18 @@ hr{
   /*STEPS*/
 
   .steps__row{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .getstarted--container{
     display: flex;
     flex-direction: column;
+  }
+  .step__wrapper{
+    width:100%;
+    max-width: 600px;
+    margin-top: 32px;
   }
   .steps__img{
     width:90%;
@@ -991,64 +1002,91 @@ hr{
   }
   .steps__title{
     display: flex;
-    justify-content: center;
-    font-size: 32px;
+    justify-content: flex-start;
+    font-size: 16px;
+    letter-spacing: 2px;
     margin:18px 0;
   }
   .step__num{
-    justify-content: center;
+    display: flex;
+    margin: 0 24px 20px 0;
   }
   .step{
     margin: 0 auto;
+    font-size: 20px;
   }
   .step__subtitle{
     width:100%;
-  }
-  .step__num{
-    display: flex;
-    flex-direction: row;
-    margin:20px 0;
+    font-size: 40px;
   }
   .step__description{
-    text-align: center;
+    text-align: left;
   }
 
   /*VALUES*/
 
   .values__row{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
     width:100%;
-    max-width: 500px;
+    max-width: none;
+    margin-left: 0;
+    margin-right:auto;
+  }
+  .values__title{
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .values__description{
+    text-align: left;
+  }
+  .values__title--subheader{
+    width:300px;
+    text-align: left;
   }
   .value__icon--wrapper-green{
-    margin: 0 auto;
+    margin: 16px 0;
   }
   .value__icon--wrapper-red{
-    margin:0 auto;
+    margin:28px 0;
   }
   .values-btn{
-    margin: 32px 0;
+    margin: 28px 0;
   }
   .value__demo--img{
-    width:80%;
+    width:50%;
+  }
+  .value__title--row{
+    display: flex;
+    align-items: center;
+    gap:12px;
   }
   .values__promise--container{
     display: flex;
     flex-direction: column;
   }
   .values__promise{
-    text-align: center;
+    text-align: left;
     display: flex;
     margin: 0 auto;
     margin-top: 20px;
     color:gray;
   }
+  .pro,.affordable{
+    font-size: 24px;
+  }
 
   /*PRICING*/
+  .pricing__title{
+    color:#6415FF;
+    font-size: 24px;
+  }
+  .pricing__subtitle{
+    max-width: 500px;
+    text-align: center;
+  }
   .pricing__description{
-    width:400px;
+    width:500px;
     margin:24px 0 auto;
     line-height: 1.5;
     color:gray;
@@ -1065,10 +1103,11 @@ hr{
     flex-direction: row;
   }
   .testimonial__love{
-    width:80%;
+    width:100%;
+    width: 300px;
   }
   .testimonial__container{
-    width:800px;
+    width:700px;
   }
   .experience__wrapper{
     width:100%;
@@ -1088,28 +1127,62 @@ hr{
   /*ADVERTISEMENT*/
   .advertisement__row{
     width:90%;
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    height:331px;
+    max-width: 690px;
+  }
+  .advertisement__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
   .advertisement__title{
     text-align: center;
+    max-width: 500px;
+    width:100%;
+
   }
   .advertisement__button--container{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
     gap:16px;
     width:100%;
+    transform: translateX(-15px);
   }
-
+  .get__started-btn{
+    padding:24px 32px;
+    border-radius: 24px; 
+    font-weight: 700;
+  }
+  .advertisement__button--contact{
+    font-weight: 700;
+    color:white;
+    background-color: #6415FF;
+  }
+  .advertisement__button--contact:hover{
+    color:white;
+  }
   /*FOOTER*/
 
   .footer__row{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+  }
+  .copyright__container{
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
   }
   .footer__links--container{
     margin: 0 24px;
+    position: relative;
   }
   .copyright__container--wrapper{
     margin: 64px 0;
@@ -1117,6 +1190,15 @@ hr{
   .copyright__inc,
   .copyright__text{
     color:#cbd5E0;
+  }
+  .footer__blob,
+  .footer__blob2{
+    z-index: 0;
+  }
+  .footer__links--container,
+  .copyright__container{
+    position: relative;
+    z-index: 1;
   }
 
   /*HAMBURGER*/
