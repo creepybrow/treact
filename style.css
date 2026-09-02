@@ -1216,6 +1216,39 @@ hr{
   .nav__links--wrapper{
     display:none;
   }
+  .nav__link,
+  .nav__link--login{
+    padding:0;
+    margin:0;
+    position: relative;
+    transition: color 300ms ease;
+  }
+  .nav__link::after,
+  .nav__link--login::after{
+    content:"";
+    position: absolute;
+    left:0;
+    bottom:-4px;
+
+    width: 100%;
+    height:2px;
+
+    background-color: #6415ff;
+
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform 300ms ease;
+  }
+
+  .nav__link:hover,
+  .nav__link--login:hover{
+    color: #6415ff;
+  }
+  .nav__link:hover::after,
+  .nav__link--login:hover::after{
+    transform: scaleX(1);
+    transform-origin:left;
+  }
   .nav__links--wrapper.menu__open{
     display: flex;
     flex-direction: column;
@@ -1239,5 +1272,8 @@ hr{
   }
   body.menu-open{
     overflow:hidden;
+  }
+  .menu__button{
+    cursor:pointer;
   }
 }
