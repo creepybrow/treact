@@ -888,9 +888,6 @@ hr{
     .steps__row{
         flex-direction: row;
     }
-    .getstarted__container{
-        transform: translateY(-100px);
-    }
     /*VALUES*/
     .values__description{
         width:100%;
@@ -1126,7 +1123,7 @@ hr{
   .steps__row{
     width:100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .getstarted--container{
     display: flex;
@@ -1261,7 +1258,7 @@ hr{
   /*TESTIMONIALS*/
   .testimonial__row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .testimonial__love{
     width:100%;
@@ -1474,6 +1471,12 @@ hr{
     display: block;
   }
 }
+@media(max-width:650px){
+    .features__subheader{
+        display: block;
+        text-align: center;
+    }
+}
 @media (max-width: 500px){
     .email{
         flex-direction: column;
@@ -1552,7 +1555,7 @@ hr{
     }
     /*ADVERTISEMENT*/
     .advertisement__title{
-        font-size: 32px;
+        font-size: 24px;
     }
     .advertisement__button--container{
         flex-direction: column;
